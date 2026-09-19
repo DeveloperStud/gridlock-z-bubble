@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>gridlock-z — find public URL</title>
+<style>
+body{font-family:system-ui,Segoe UI,sans-serif;background:#0f1419;color:#e7ecf3;margin:2rem;}
+a{color:#5eb1ff} .card{max-width:40rem;background:#1a2332;border:1px solid #2a3a4f;border-radius:12px;padding:1.5rem}
+.badge{display:inline-block;background:#1e4d2b;color:#9dffb0;padding:.2rem .6rem;border-radius:999px;font-size:.75rem}
+</style></head><body>
+<div class="card">
+<span class="badge">FREE · ephemeral</span>
+<h1>gridlock-z public URLs</h1>
+<p>Bookmarks to LAN can use this page to discover the current trycloudflare / loca.lt link.
+Named CF hostname requires a domain (not configured — no payment).</p>
+<p class="active">Active: <a href="https://garbage-dishes-prompt-philosophy.trycloudflare.com/">https://garbage-dishes-prompt-philosophy.trycloudflare.com/</a></p>
+<ul><li><a href="https://garbage-dishes-prompt-philosophy.trycloudflare.com/">https://garbage-dishes-prompt-philosophy.trycloudflare.com/</a></li><li><a href="https://nature-hewlett-retain-took.trycloudflare.com/">https://nature-hewlett-retain-took.trycloudflare.com/</a></li><li><a href="https://provinces-derived-easy-melissa.trycloudflare.com/">https://provinces-derived-easy-melissa.trycloudflare.com/</a></li></ul>
+<p><a href="/iis/">IIS Manager</a> · <a href="/gridlock-z/">gridlock-z</a> · <a href="/api/gridlock-z">API</a></p>
+<p class="meta">Updated 2026-09-19T04:37:12</p>
+</div>
+<script>
+fetch('/api/gridlock-z').then(r=>r.json()).then(d=>{
+  if(d.active){ const a=document.querySelector('.active a'); if(a){a.href=d.active;a.textContent=d.active;} }
+}).catch(()=>{});
+</script>
+</body></html>
